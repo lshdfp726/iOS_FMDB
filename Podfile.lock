@@ -1,0 +1,17 @@
+PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - LHSFMDatabaseAdditions (0.0.3):
+    - FMDB
+
+DEPENDENCIES:
+  - LHSFMDatabaseAdditions (~> 0.0.3)
+
+SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  LHSFMDatabaseAdditions: aba229cb0db6aea013a64c3be1542cd13b0a069e
+
+PODFILE CHECKSUM: f47e902bb5ac795027dd924fb85675f00f1152f0
+
+COCOAPODS: 1.0.1
