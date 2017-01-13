@@ -25,10 +25,10 @@
 		326820001DB4C32500A846B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32681F831DB4B9E800A846B4 /* LaunchScreen.storyboard */; };
 		326820011DB4C32500A846B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32681F811DB4B9E800A846B4 /* Assets.xcassets */; };
 		326820021DB4C32500A846B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32681F7E1DB4B9E800A846B4 /* Main.storyboard */; };
-		3268200C1DB4C65800A846B4 /* SQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3268200B1DB4C65800A846B4 /* SQLite.m */; };
-		3268200F1DB4D14B00A846B4 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3268200E1DB4D14B00A846B4 /* DataModel.m */; };
 		326820191DB7096900A846B4 /* SQL数据库基本介绍.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 326820181DB7096900A846B4 /* SQL数据库基本介绍.rtf */; };
 		3268201A1DB7096900A846B4 /* SQL数据库基本介绍.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 326820181DB7096900A846B4 /* SQL数据库基本介绍.rtf */; };
+		32749BA91E2881D900D84086 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32749BA61E2881D900D84086 /* DataModel.m */; };
+		32749BAA1E2881D900D84086 /* SQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 32749BA81E2881D900D84086 /* SQLite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,11 +81,11 @@
 		32681FD81DB4C25F00A846B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		326820081DB4C32500A846B4 /* FMDB_Research_dv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMDB_Research_dv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		326820091DB4C32500A846B4 /* FMDB_Research copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FMDB_Research copy2-Info.plist"; path = "/Users/lsh_macPro/Desktop/FMDB_Research/FMDB_Research copy2-Info.plist"; sourceTree = "<absolute>"; };
-		3268200A1DB4C65800A846B4 /* SQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = ../SQLite.h; sourceTree = "<group>"; };
-		3268200B1DB4C65800A846B4 /* SQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SQLite.m; path = ../SQLite.m; sourceTree = "<group>"; };
-		3268200D1DB4D14B00A846B4 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataModel.h; path = ../DataModel.h; sourceTree = "<group>"; };
-		3268200E1DB4D14B00A846B4 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataModel.m; path = ../DataModel.m; sourceTree = "<group>"; };
 		326820181DB7096900A846B4 /* SQL数据库基本介绍.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "SQL数据库基本介绍.rtf"; sourceTree = "<group>"; };
+		32749BA51E2881D900D84086 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		32749BA61E2881D900D84086 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		32749BA71E2881D900D84086 /* SQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLite.h; sourceTree = "<group>"; };
+		32749BA81E2881D900D84086 /* SQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLite.m; sourceTree = "<group>"; };
 		A27B21B5FFF7D2680EB0C862 /* Pods-FMDB_Research.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDB_Research.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FMDB_Research/Pods-FMDB_Research.debug.xcconfig"; sourceTree = "<group>"; };
 		CE12CA7DAD70EF666DC2D3DF /* Pods-FMDB_Research.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDB_Research.release.xcconfig"; path = "Pods/Target Support Files/Pods-FMDB_Research/Pods-FMDB_Research.release.xcconfig"; sourceTree = "<group>"; };
 		FD4980889F2FBC6D2C2960AF /* libPods-FMDB_Research.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FMDB_Research.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,8 +157,8 @@
 		32681F741DB4B9E800A846B4 /* FMDB_Research */ = {
 			isa = PBXGroup;
 			children = (
+				32749BA41E2881D900D84086 /* FMDBManager */,
 				326820181DB7096900A846B4 /* SQL数据库基本介绍.rtf */,
-				326820101DB4D18100A846B4 /* FMDBManager */,
 				32681F781DB4B9E800A846B4 /* AppDelegate.h */,
 				32681F791DB4B9E800A846B4 /* AppDelegate.m */,
 				32681F7B1DB4B9E800A846B4 /* ViewController.h */,
@@ -249,13 +249,13 @@
 			path = FMDB_Research_dvUITests;
 			sourceTree = "<group>";
 		};
-		326820101DB4D18100A846B4 /* FMDBManager */ = {
+		32749BA41E2881D900D84086 /* FMDBManager */ = {
 			isa = PBXGroup;
 			children = (
-				3268200D1DB4D14B00A846B4 /* DataModel.h */,
-				3268200E1DB4D14B00A846B4 /* DataModel.m */,
-				3268200A1DB4C65800A846B4 /* SQLite.h */,
-				3268200B1DB4C65800A846B4 /* SQLite.m */,
+				32749BA51E2881D900D84086 /* DataModel.h */,
+				32749BA61E2881D900D84086 /* DataModel.m */,
+				32749BA71E2881D900D84086 /* SQLite.h */,
+				32749BA81E2881D900D84086 /* SQLite.m */,
 			);
 			path = FMDBManager;
 			sourceTree = "<group>";
@@ -537,9 +537,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32749BAA1E2881D900D84086 /* SQLite.m in Sources */,
 				32681F7D1DB4B9E800A846B4 /* ViewController.m in Sources */,
-				3268200F1DB4D14B00A846B4 /* DataModel.m in Sources */,
-				3268200C1DB4C65800A846B4 /* SQLite.m in Sources */,
+				32749BA91E2881D900D84086 /* DataModel.m in Sources */,
 				32681F7A1DB4B9E800A846B4 /* AppDelegate.m in Sources */,
 				32681F771DB4B9E800A846B4 /* main.m in Sources */,
 			);
